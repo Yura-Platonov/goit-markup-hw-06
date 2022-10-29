@@ -72,15 +72,84 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button class="main-button" type="button" data-modal-open>Замовити послугу</button>
+          <button class="main-button" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="close-modal" data-modal-close>
             <svg width="11px" height="11px">
-            <use href="./images/Sprite-optimized.svg#icon-close-modal"></use>
-          </svg></button>
+              <use href="./images/Sprite-optimized.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+          <form class="data-form form" action="">
+            <div class="form-title-container">
+              <b class="form-title">Залиште свої дані, ми вам передзвонимо</b>
+            </div>
+
+            <div class="form-field">
+              <label for="name" class="form-label">Ім'я</label>
+              <div class="form-control">
+                <input type="text name="name" id="name" class="form-input"/>
+                <svg class="form-svg" width="18px" height="18px">
+                  <use
+                    href="./images/Sprite-optimized.svg#icon-person-form"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="tel" class="form-label">Телефон</label>
+              <div class="form-control">
+                <input type="tel" name="tel" id="tel" />
+                <svg class="form-svg" width="18px" height="18px">
+                  <use
+                    href="./images/Sprite-optimized.svg#icon-phone-form"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="mail" class="form-label">Пошта</label>
+              <div class="form-control">
+                <input type="email" name="mail" id="mail" />
+                <svg class="form-svg" width="18px" height="18px">
+                  <use
+                    href="./images/Sprite-optimized.svg#icon-email-form"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="comment" class="form-label">Коментар</label>
+              <textarea
+                name="comment"
+                id="comment"
+                rows="10"
+                placeholder="Введіть текст"
+              ></textarea>
+            </div>
+            <div class="checkbox-container">
+              <svg class="checkbox-svg" width="16px" height="15px">
+                <use
+                  href="./images/Sprite-optimized.svg#icon-check-form"
+                ></use>
+              </svg>
+              <input type="checkbox" name="" id="agreement" class="checkbox-input visually-hidden"/>
+              <label for="agreement" class="checkbox-label"
+                >Погоджуюся з розсилкою та приймаю <a href="#" class="agreement-link">Умови договору</a></label
+              >
+            </div>
+
+            <div class="submit-button-container">
+              <button type="submit" class="sumbit-button">Відправити</button>
+            </div>
+          </form>
         </div>
       </div>
 
@@ -146,24 +215,25 @@
           <h2 class="employment-title">Чим ми займаємося</h2>
           <ul class="list employment">
             <li class="employment-item">
-              <img 
+              <img
                 src="images/pic1.jpg"
                 alt="рука пише на клавіатурі"
                 width="370"
               />
               <div class="employment-text">
-                 <h3 class="employment-title-img">Десктопні додатки</h3>
+                <h3 class="employment-title-img">Десктопні додатки</h3>
               </div>
             </li>
             <li class="employment-item">
-              <img class="employment-image"
+              <img
+                class="employment-image"
                 src="images/pic2.jpg"
                 alt="рука тримає телефон"
                 width="370"
               />
               <div class="employment-text">
                 <h3 class="employment-title-img">Мобільні додатки</h3>
-             </div>
+              </div>
             </li>
             <li class="employment-item">
               <img
@@ -173,7 +243,7 @@
               />
               <div class="employment-text">
                 <h3 class="employment-title-img">Дизайнерські рішення</h3>
-             </div>
+              </div>
             </li>
           </ul>
         </div>

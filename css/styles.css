@@ -304,6 +304,158 @@ padding-bottom: 94px;}
     border-radius: 4px;
 }
 
+.form{
+    width: 528px;
+    padding: 40px;
+}
+
+.form-title-container{
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.form-title{
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+
+color: #212121;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-field input{
+    height: 40px;
+    padding-left: 40px;
+    width: 100%;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form-field input::placeholder{
+    color: rgba(117, 117, 117, 0.5);
+    
+}
+
+.form-label{
+    margin-bottom: 4px;
+
+    font-size: 12px;
+}
+
+textarea{
+    height: 120px;
+    padding: 12px 16px;
+
+    resize: none;
+    font-size: 12px;
+    
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.checkbox-container{
+    position: relative;
+    display: flex;
+    
+    margin-top: 20px;
+    padding-left: 37px;
+    
+    font-size: 14px;
+    line-height: 1.7;
+    
+}
+
+.checkbox-svg{
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+
+    fill: var(--primary-white-color);
+    border: 2px solid #000;
+    border-radius: 2px;
+    background-color: var(--primary-white-color);
+}
+
+.agreement-link{
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+
+
+/* .checkbox-label::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid gray;
+  border-radius: 2px;
+  content:'';}
+
+.checkbox-label::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid gray;
+  border-radius: 2px;
+  background-image: url(./images/Sprite-optimized.svg#icon-check-form);
+  content: '';} */
+
+
+.checkbox-input:checked + .checkbox-svg{
+    fill: var(--primary-white-color);
+    background-color: var(--accent-color);
+    border: none;
+}  
+.checkbox-input:checked + .checkbox-label{
+  color: red;
+} 
+
+.sumbit-button{
+    margin-top: 30px;
+    padding: 10px 52px;
+    border: 0;
+    
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer; 
+    
+    transition: background-color 250ms var(--cubic-bezier);
+    }
+    
+    .sumbit-button:hover, .sumbit-button:focus {
+        background-color: #188CE8;
+    }
+
+.submit-button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.form-control{
+    position: relative;
+}
+
+.form-svg{
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+
+    }
 
 .advantages-item{
         width: 270px;
