@@ -72,9 +72,17 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button class="main-button" type="button">Замовити послугу</button>
+          <button class="main-button" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="close-modal" data-modal-close>
+            <svg width="11px" height="11px">
+            <use href="./images/Sprite-optimized.svg#icon-close-modal"></use>
+          </svg></button>
+        </div>
+      </div>
 
       <section class="advantages-section">
         <div class="container">
@@ -138,18 +146,24 @@
           <h2 class="employment-title">Чим ми займаємося</h2>
           <ul class="list employment">
             <li class="employment-item">
-              <img
+              <img 
                 src="images/pic1.jpg"
                 alt="рука пише на клавіатурі"
                 width="370"
               />
+              <div class="employment-text">
+                 <h3 class="employment-title-img">Десктопні додатки</h3>
+              </div>
             </li>
             <li class="employment-item">
-              <img
+              <img class="employment-image"
                 src="images/pic2.jpg"
                 alt="рука тримає телефон"
                 width="370"
               />
+              <div class="employment-text">
+                <h3 class="employment-title-img">Мобільні додатки</h3>
+             </div>
             </li>
             <li class="employment-item">
               <img
@@ -157,6 +171,9 @@
                 alt="рука тримає планшет"
                 width="370"
               />
+              <div class="employment-text">
+                <h3 class="employment-title-img">Дизайнерські рішення</h3>
+             </div>
             </li>
           </ul>
         </div>
@@ -462,5 +479,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
