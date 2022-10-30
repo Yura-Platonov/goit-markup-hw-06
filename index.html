@@ -84,7 +84,7 @@
               <use href="./images/Sprite-optimized.svg#icon-close-modal"></use>
             </svg>
           </button>
-          <form class="data-form form" action="">
+          <form class="data-form form">
             <div class="form-title-container">
               <b class="form-title">Залиште свої дані, ми вам передзвонимо</b>
             </div>
@@ -104,7 +104,7 @@
             <div class="form-field">
               <label for="tel" class="form-label">Телефон</label>
               <div class="form-control">
-                <input type="tel" name="tel" id="tel" />
+                <input type="tel" name="tel" id="tel" class="form-input"/>
                 <svg class="form-svg" width="18px" height="18px">
                   <use
                     href="./images/Sprite-optimized.svg#icon-phone-form"
@@ -116,7 +116,7 @@
             <div class="form-field">
               <label for="mail" class="form-label">Пошта</label>
               <div class="form-control">
-                <input type="email" name="mail" id="mail" />
+                <input type="email" name="mail" id="mail" class="form-input" />
                 <svg class="form-svg" width="18px" height="18px">
                   <use
                     href="./images/Sprite-optimized.svg#icon-email-form"
@@ -135,14 +135,19 @@
               ></textarea>
             </div>
             <div class="checkbox-container">
-              <svg class="checkbox-svg" width="16px" height="15px">
-                <use
-                  href="./images/Sprite-optimized.svg#icon-check-form"
-                ></use>
-              </svg>
-              <input type="checkbox" name="" id="agreement" class="checkbox-input visually-hidden"/>
               <label for="agreement" class="checkbox-label"
-                >Погоджуюся з розсилкою та приймаю <a href="#" class="agreement-link">Умови договору</a></label
+                ><input
+                  type="checkbox"
+                  name=""
+                  id="agreement"
+                  class="checkbox-input visually-hidden"
+                />
+                <svg class="checkbox-svg" width="16px" height="15px">
+                  <use
+                    href="./images/Sprite-optimized.svg#icon-check-form"
+                  ></use></svg
+                >Погоджуюся з розсилкою та приймаю
+                <a href="#" class="agreement-link">Умови договору</a></label
               >
             </div>
 
@@ -546,6 +551,28 @@
               ></a>
             </li>
           </ul>
+        </div>
+        <div>
+          <form>
+            <h3 class="footer-link-title">Підпишіться на розсилку</h3>
+            <div class="footer-form">
+              <label for="mail"
+                ><input
+                  type="email"
+                  id="mail"
+                  name="mail"
+                  class="input-footer"
+                  placeholder="E-mail"
+              /></label>
+              <button type="submit" class="footer-form-button">
+                Підписатися <svg class="footer-button-svg" width="24" height="24">
+                  <use
+                    href="./images/Sprite-optimized.svg#icon-footer-button-svg"
+                  ></use>
+                </svg>
+              </button>
+              </div>
+          </form>
         </div>
       </div>
     </footer>
